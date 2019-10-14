@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3 class="center-align red lighten-3">{{title}}</h3>
+
+<table class = "bordered highlight responsive-tab">
+  <tr class = "teal lighten-2">
+    <th>LUGAR</th>
+    <th>DESCRIPCIÓN</th>
+    <th>FECHA</th>
+      <th>CUPOS</th>
+  </tr>
+  {% for tour in tour_list %}
+  <tr > 
+      
+      <td> <a> {{tour.lugar}} </a> </td>
+      <td> {{tour.descripcion}} </td>
+      <td> {{tour.fecha}} </td>
+      <td> {{tour.cupos}} </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
