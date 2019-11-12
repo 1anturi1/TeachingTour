@@ -9,7 +9,7 @@ from django.core import serializers
 from django.urls import reverse
 # Create your views here.
 def home(request):
-    return render(request,"home.html")
+    return render(request,"index.html")
 
 def listaTuristas(request):
     if request.method == 'POST':
