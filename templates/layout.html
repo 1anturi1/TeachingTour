@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <title>TEACHING TOUR</title>
-</head>
-<body>
-  <header class="container center-align">
-    <h1>Backend TEACHING TOUR</h1>
-  </header>
+		<title>TEACHING TOUR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href= "{% static 'css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+	</head>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
 
-  <div class="container">
-    {% block content %}
-    {% endblock %}
-    <br>
-
-    <a style="display:block" class="center-align" href="/admin">Admin Login</a>
-  </div>
-</body>
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="">TeachingTour</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li>
+								<a href="#">Recorridos</a>
+								<ul>
+									<li><a href="left-sidebar.html">Opiniones</a></li>
+									<li><a href="right-sidebar.html">Favoritos</a></li>
+									<li><a href="no-sidebar.html">Disponibilidad</a></li>
+									<li>
+										<a href="#">Conocer mas...</a>
+										<ul>
+											<li><a href="#">Option 1</a></li>
+											<li><a href="#">Option 2</a></li>
+											<li><a href="#">Option 3</a></li>
+											<li><a href="#">Option 4</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="elements.html">Blog</a></li>
+							<li><a href="/registrarse" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+        </div>
+    </body>
 </html>

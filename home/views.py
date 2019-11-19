@@ -11,6 +11,10 @@ from django.urls import reverse
 def home(request):
     return render(request,"index.html")
 
+
+def registro(request):
+    return render(request,"registro.html")
+
 def listaTuristas(request):
     if request.method == 'POST':
         form = TuristaForm(request.POST)

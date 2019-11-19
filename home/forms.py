@@ -8,11 +8,13 @@ class TuristaForm(forms.ModelForm):
             'identificacion',
             'nombre',
             'correo',
+            'idioma',
         ]
         labels = {
             'identificacion': 'Identificación',
             'nombre': 'Nombre',
             'correo': 'Correo',
+            'idioma': 'Idioma'
         }
 
 class GuiaForm(forms.ModelForm):
@@ -22,13 +24,13 @@ class GuiaForm(forms.ModelForm):
             'identificacion',
             'nombre',
             'correo',
-            'direccion',
+            'idioma',
         ]
         labels = {
             'identificacion': 'Identificación',
             'nombre': 'Nombre',
             'correo': 'Correo',
-            'direccion': 'Dirección'
+            'idioma': 'Idioma'
         }
 
 class TourForm(forms.ModelForm):
@@ -39,10 +41,12 @@ class TourForm(forms.ModelForm):
             'descripcion',
             'fecha',
             'cupos',
+            'imagen',
         ]
         labels = {
             'lugar': 'Lugar',
             'descripcion': 'Descripcion',
             'fecha': 'Fecha',
             'cupos': 'Cupos',
+            'imagen': 'Imagen',
         }
